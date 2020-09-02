@@ -26,7 +26,7 @@ export default class CreateTransactionsTable1599001657016
           },
           {
             name: 'value',
-            type: 'decimal',
+            type: 'numeric',
             isNullable: false,
           },
           {
