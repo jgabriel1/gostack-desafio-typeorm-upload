@@ -20,7 +20,12 @@ class Transaction {
   @Column()
   type: 'income' | 'outcome';
 
-  @Column('decimal')
+  @Column('decimal', {
+    transformer: {
+      to: value => value,
+      from: value => Number(value),
+    },
+  })
   value: number;
 
   @Column()
